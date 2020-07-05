@@ -1,7 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 
+import Home from './screens/Home'
 import Signin from './screens/Signin'
+import Signup from './screens/Signup'
+import ManageLinks from './screens/Manage/Links'
+import ManageLinksCreate from './screens/Manage/Create'
+import ManageLinksEdit from './screens/Manage/Edit'
 
 const App = () => {
   return (
@@ -19,11 +24,11 @@ const App = () => {
         </nav>
         <Switch>
           <Route path='/sign-in' component={ Signin }/>
-          <Route path='/sign-up'><h1>Sign-up</h1></Route>
-          <Route path='/manage/links/create'><h1>create</h1></Route>
-          <Route path='/manage/links/edit'><h1>edit</h1></Route>
-          <Route path='/manage/links'><h1>Links</h1></Route>
-          <Route path='/'><h1>Home</h1></Route>
+          <Route path='/sign-up' component={ Signup }/>
+          <Route path='/manage/links/create' component={ ManageLinksCreate }/>
+          <Route path='/manage/links/edit' component={ ManageLinksEdit }/>
+          <Route path='/manage/links' component={ ManageLinks } />
+          <Route path='/' component={ Home } />
           
         </Switch>
       </div>

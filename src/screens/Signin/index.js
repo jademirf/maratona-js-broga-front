@@ -5,15 +5,13 @@ import { signIn } from './SigninActions'
 
 
 const Signin = (props) => {
-  const { account, signIn } = props
+  const { signIn } = props
 
   const submitHandler = (e) => {
     e.preventDefault()
 
     signIn({ email: 'teste1@123.com', password: '1234'})
   }
-
-  console.log('*** SignIn.account: ', account)
 
   return (
     <div className="container h-100 pt-5">

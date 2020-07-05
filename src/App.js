@@ -13,13 +13,13 @@ const App = () => {
     <BrowserRouter>
       <div>
         <nav>
-          <ul>
-            <li><Link to="/sign-in">Sign-in</Link></li>
-            <li><Link to="/sign-up">Sign-up</Link></li>
-            <li><Link to="/manage/links/create">Create link</Link></li>
-            <li><Link to="/manage/links/edit">Edit link</Link></li>
-            <li><Link to="/manage/links">Links</Link></li>
-            <li><Link to="/">Home</Link></li>
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item"><Link to="/sign-in">Sign-in</Link></li>
+            <li className="list-group-item"><Link to="/sign-up">Sign-up</Link></li>
+            <li className="list-group-item"><Link to="/manage/links/create">Create link</Link></li>
+            <li className="list-group-item"><Link to="/manage/links/edit">Edit link</Link></li>
+            <li className="list-group-item"><Link to="/manage/links">Links</Link></li>
+            <li className="list-group-item"><Link to="/">Home</Link></li>
           </ul>
         </nav>
         <Switch>

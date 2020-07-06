@@ -1,5 +1,5 @@
 import React from 'react'
-import { signUp } from './SignupActions'
+import { signUp } from '../../actions/AccountActions'
 import { connect } from 'react-redux'
 import { Link, Redirect } from 'react-router-dom'
 
@@ -51,7 +51,7 @@ const Signup = (props) => {
 }
 const mapStateToProps = (state) => {
   return {
-    account: state.signUp.account
+    account: state.account.account
   }
 }
 
